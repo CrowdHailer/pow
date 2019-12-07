@@ -2,9 +2,9 @@ defmodule PowResetPassword.Phoenix.Messages do
   @moduledoc false
 
   @doc """
-  Flash message to show when a reset password e-mail has been sent.
+  Flash message to show generic response for reset password request.
   """
-  def email_has_been_sent(_conn), do: "An email with reset instructions has been sent to you. Please check your inbox."
+  def email_has_been_sent(_conn), do: "If an account for the provided email exists, an email with reset instructions will be send to you. Please check your inbox."
 
   @doc """
   Flash message to show when no user exists for the provided e-mail.
